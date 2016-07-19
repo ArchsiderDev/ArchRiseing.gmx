@@ -5,9 +5,27 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="NPC">
+      <sprite>sprites\SPR_HumanStandard</sprite>
+      <sprite>sprites\SPR_ZombieStandard</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\PLY_HumanPlayer</object>
+    <objects name="NPC">
+      <objects name="Human">
+        <object>objects\NPC_HumanParent</object>
+        <object>objects\NPC_HumanStandard</object>
+      </objects>
+      <objects name="Zombie">
+        <object>objects\NPC_ZombieParent</object>
+        <object>objects\NPC_ZombieStandard</object>
+      </objects>
+    </objects>
+  </objects>
   <help>
     <rtf>help.rtf</rtf>
   </help>
